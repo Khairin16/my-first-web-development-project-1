@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient( 180deg, #e4e4ff 0%, #bbe5ff 50%, #96e8ff 100% );
+    line-height: 1.6;
+    color: #101828;
+}
+button {
+    padding: 10px 18px;
+    color: #111;
+    background: linear-gradient(90deg, #ffd330 0%, #ffd447 50%, #ffa500 100%);
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.85;
+}
+/* ===== Navbar ===== */
+.navbar {
+    min-height: 60px;
+    padding: 10px 7%;
+    background-color: #f8fdff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-div {
+    font-size: 21px;
+    font-weight: bold;
+}
+/* ===== Hero Section ===== */
+.hero {
+    padding: 35px 7%;
+}
+.first-dev {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 25px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.developer-icon img {
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+}
+.first-dev h1 {
+    max-width: 800px;
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 1.4;
+}
+.first-dev p {
+    max-width: 650px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+/* ===== Shared Section Heading ===== */
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.section-heading h2,
+.section-heading h2 {
+    font-size: 25px;
+}
+.section-heading p {
+    font-size: 13px;
+    color: #475467;
+}
+/* ===== Why Web Development ===== */
+.why-section {
+    padding: 35px 7%;
+}
+.why-card {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.why-text {
+    flex: 1;
+}
+.why-text h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.why-text p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.why-text .clickbutton {
+    margin: 0;
+}
+.laptop-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.laptop-icon img {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: contain;
+}
+/* ===== Inspiration / Video ===== */
+.inspiration-section {
+    padding: 35px 7%;
+}
+.video-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+}
+.video-card iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 12px;
+}
+/* ===== Current Target ===== */
+.target-section {
+    padding: 35px 7% 50px;
+}
+.target-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+.target-card {
+    padding: 22px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgba(40, 80, 120, 0.12);
+    transition: transform 0.2s ease;
+}
+.target-card:hover {
+    transform: translateY(-5px);
+}
+.technology-icon {
+    min-height: 45px;
+    margin-bottom: 10px;
+}
+.technology-icon i,
+.technology-icon img {
+    width: 38px;
+    height: 38px;
+    font-size: 38px;
+    object-fit: contain;
+}
+.html-card .technology-icon i {
+    color: #e34f26;
+}
+.css-card .technology-icon i {
+    color: #1572b6;
+}
+.target-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.target-card p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.target-card a {
+    font-size: 12px;
+    color: #101828;
+    text-decoration: none;
+}
+.target-card a:hover {
+    text-decoration: underline;
+}
+/* ===== Footer ===== */
+.footer {
+    padding: 18px 7%;
+    background-color: rgba(248, 253, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.footer p {
+    font-size: 12px;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.social-links a {
+    font-size: 20px;
+    color: #1877f2;
+.social-links a:hover {
+    color: #101828;
+}
+}
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 5%;
+    }
+    .hero,
+    .why-section,
+    .inspiration-section,
+    .target-section {
+        padding: 25px 5%;
+    }
+    .first-dev {
+        padding: 25px 15px;
+    }
+    .first-dev h1 {
+        font-size: 23px;
+    }
+    .why-card {
+        flex-direction: column;
+        padding: 25px 20px;
+        text-align: center;
+    }
+    .why-text .clickbutton {
+        margin: auto;
+    }
+    .laptop-icon img {
+        max-width: 280px;
+    }
+    .target-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+    .target-container {
+        gap: 15px;
+    }
+    .target-card {
+        padding: 18px;
+    }
+}
